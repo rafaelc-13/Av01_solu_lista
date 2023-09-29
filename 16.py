@@ -9,8 +9,13 @@ seguinte'''
 
 inicio = int(input("Que horas começará o jogo? (Apenas hora) "))
 fim = int(input("Que horas o jogo termina? (Apenas hora) "))
-duracao = fim - inicio
 
-print("Duração do jogo foi de ",duracao," horas")
+if fim >= inicio:
+  duracao = fim - inicio
+  print("Duração do jogo foi de ",duracao," horas")
+else:
+  duração = 24 - fim + inicio
+  print("Duração do jogo foi invalida, pois ",duracao," horas, excedem 24hrs.")
+
 
 
