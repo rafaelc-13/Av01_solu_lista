@@ -14,7 +14,7 @@ if fim >= inicio:
   duracao = fim - inicio
   print("Duração do jogo foi de ",duracao," horas")
 else:
-  duração = 24 - fim + inicio
+  duração = 24 - inicio + fim
   print("Duração do jogo foi invalida, pois ",duracao," horas, excedem 24hrs.")
 
 
